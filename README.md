@@ -45,6 +45,25 @@ For the validation and testing data only resize and normalization were done.
 
 ### Results
 
+#### LeapMotion Models
+
+#### TinyHGR Models
+##### ResNet50
+The metrics for ResNet 50 are shown below:
+```
+precision    recall  f1-score   support
+
+0      0.564     0.578     0.571       462
+1      0.625     0.840     0.716       525
+2      0.745     0.478     0.582       477
+3      0.591     0.568     0.579       551
+
+accuracy                          0.620      2015
+macro avg      0.631     0.616     0.612      2015
+weighted avg      0.630     0.620     0.614      2015
+```
+The confusion matrix is:
+![ResNet50 Confusion Matrix](./files/resnet50_tinyhgr_cm.png "ResNet 50 CM for TinyHGR)
 ### Conclusions
 
 ### Discussion
@@ -52,7 +71,8 @@ For the validation and testing data only resize and normalization were done.
 There are some limitations to our project. These limitations include:
 - Using the same learning rate and optimizers for all the models.  Better results could have been achieved it these were adjusted per model
 - ResNet50 and InceptionV3 were limited to being trained for 2 epochs. 
-- We aren't using entire datasets. Limiting the gestures the model can classify 
+- We aren't using entire datasets. Limiting the gestures the model can classify.
+- Trained on balanced dataset. Model would not work well in an environment where the available images/gestures were imbalanced.
 
 ### Outlooks
 Moving forward we would train the ResNet and Inception models on the TinyHGR dataset further to get better results. After getting better results it could be used to try and capture hand gestures in real time, such as in a hospital setting. Along with this, we could add more gestures to the list to make the application more comprehensive. This would increase the variety of settings the application could be used in. 
