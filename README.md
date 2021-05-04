@@ -63,7 +63,7 @@ The metrics for ResNet 50 are shown below:
 weighted avg      0.630     0.620     0.614      2015
 ```
 The confusion matrix is:
-![ResNet50 Confusion Matrix](/files/resnet50_tinyhgr_cm.png "ResNet 50 CM for TinyHGR)
+![plot](/files/resnet50_tinyhgr_cm.png "ResNet 50 CM for TinyHGR)
 ### Conclusions
 
 ### Discussion
