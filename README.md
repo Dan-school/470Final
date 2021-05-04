@@ -46,10 +46,60 @@ For the validation and testing data only resize and normalization were done.
 ### Results
 
 #### LeapMotion Models
+##### ResNet18
+The results for ResNet18 are shown below:
+
+```
+              precision    recall  f1-score   support
+
+           0      1.000     1.000     1.000       117
+           1      1.000     1.000     1.000       113
+           2      1.000     0.991     0.996       116
+           3      0.991     1.000     0.995       110
+
+    accuracy                          0.998       456
+   macro avg      0.998     0.998     0.998       456
+weighted avg      0.998     0.998     0.998       456
+```
+
+The confusion matrix is:
+
+![plot](/files/resnet18_leapmotion_cm.png)
+
+##### ResNet50
+The results for ResNet50 are shown below:
+
+```
+
+```
+
+The confusion matrix is:
+
+![plot](/files/resnet50_leapmotion_cm.png)
+
+##### InceptionV3
+The results for InceptionV3 are shown below:
+
+```
+              precision    recall  f1-score   support
+
+           0      1.000     0.496     0.663       117
+           1      0.990     0.912     0.949       113
+           2      0.925     0.741     0.823       116
+           3      0.547     1.000     0.707       110
+
+    accuracy                          0.783       456
+   macro avg      0.866     0.787     0.786       456
+weighted avg      0.869     0.783     0.785       456
+```
+
+The confusion matrix is:
+
+![plot](/files/inceptionv3_leapmotion_cm.png)
 
 #### TinyHGR Models
 ##### ResNet50
-The metrics for ResNet 50 are shown below:
+The results for ResNet 50 are shown below:
 ```
               precision    recall  f1-score   support
 
@@ -65,6 +115,26 @@ weighted avg      0.630     0.620     0.614      2015
 The confusion matrix is:
 
 ![plot](/files/resnet50_tinyhgr_cm.png)
+
+##### InceptionV3
+The results for Inception V3 are below:
+
+```
+              precision    recall  f1-score   support
+
+           0      0.450     0.647     0.531       462
+           1      0.757     0.606     0.673       525
+           2      0.526     0.577     0.550       477
+           3      0.614     0.454     0.522       551
+
+    accuracy                          0.567      2015
+   macro avg      0.587     0.571     0.569      2015
+weighted avg      0.593     0.567     0.570      2015
+```
+
+The confusion matrix is: 
+
+![plot](/files/inceptionv3_tinyhgr_cm.png)
 
 ### Conclusions
 
