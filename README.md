@@ -3,7 +3,8 @@
 ## Danny Lindberg and Nick Littlefield
 
 ### Overview
-A deep learning computer vision application to detect a series of hand gestures such as Okay, Like (Thumb Up), Dislike (Thumb Down), and Stop (Palm). 
+The problem that we face is creating a way for machines to understand certain hand gestures, using computer vision, in order for people to communicate with each other when one, or multiple members, is not able to communicate vocally. This can be handy in hospital emergency rooms, military situations and even, if the dataset was expanded, communicating with someone who only can only communicate through ASL. In this specific instance we focused on the gestures OK, thumbs up, thumbs down and a camera facing palm, to show proof of concept.
+
 
 ### Materials and Methods
 #### Datasets
@@ -31,6 +32,8 @@ For this project we used the PyTorch, OpenCV, Pandas, and Numpy libraries. The e
 - ResNet50
 - Inception V3
 
+These models were not fine-tuned to the dataset. Instead, we extracted the features from the models, and added new classification layers to the model. These classification layers were then trained. 
+
 ### Results
 
 ### Conclusions
@@ -38,4 +41,4 @@ For this project we used the PyTorch, OpenCV, Pandas, and Numpy libraries. The e
 ### Discussion
 
 ### Outlooks
-
+Moving forward we would train the ResNet and Inception models on the TinyHGR dataset further to get better results. After getting better results it could be used to try and capture hand gestures in real time, such as in a hospital setting. Along with this, we could add more gestures to the list to make the application more comprehensive. This would increase the variety of settings the application could be used in. 
