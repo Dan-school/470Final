@@ -163,3 +163,10 @@ There are some limitations to our project. These limitations include:
 
 ### Outlooks
 Moving forward we would train the ResNet and Inception models on the TinyHGR dataset further to get better results. After getting better results it could be used to try and capture hand gestures in real time, such as in a hospital setting. Along with this, we could add more gestures to the list to make the application more comprehensive. This would increase the variety of settings the application could be used in. 
+
+### Dataset Citations
+P. Bao, A.I. Maqueda, C.R. del Blanco, N. García, “Tiny Hand Gesture Recognition without Localization via a Deep Convolutional Network”, IEEE Trans. Consumer Electronics, vol. 63, no. 3, pp. 251-257, Aug. 2017. (doi: 10.1109/TCE.2017.014971)
+
+T. Mantecón, C.R. del Blanco, F. Jaureguizar, N. García, “Hand Gesture Recognition using Infrared Imagery Provided by Leap Motion Controller”, Int. Conf. on Advanced Concepts for Intelligent Vision Systems, ACIVS 2016, Lecce, Italy, pp. 47-57, 24-27 Oct. 2016. (doi: 10.1007/978-3-319-48680-2_5)
+
+
