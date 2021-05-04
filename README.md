@@ -150,6 +150,10 @@ The confusion matrix is:
 
 ![plot](/files/inceptionv3_tinyhgr_cm.png)
 
+The pretrained models can be found here: https://drive.google.com/drive/folders/1PwPzmyz1L70u5fWoLk8qIwIcifvm-u7e
+
+The notebooks containing the full model run and the results can be found here: https://github.com/Dan-school/470Final/tree/main/best_model_runs
+
 ### Conclusions
 The models performed best on the LeapMotion dataset. These images were simple black and white images and only consisted of the arm and hand. Both ResNet models held high accuracy, ResNet18 had 99.8%, while ResNet50 had 97.6%). The Inception network had 78.3% accuracy and struggled with separating Thumb Up, Thumb Down, and Ok from the Palm class. 
 
