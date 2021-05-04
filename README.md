@@ -51,19 +51,19 @@ For the validation and testing data only resize and normalization were done.
 ##### ResNet50
 The metrics for ResNet 50 are shown below:
 ```
-precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
-0      0.564     0.578     0.571       462
-1      0.625     0.840     0.716       525
-2      0.745     0.478     0.582       477
-3      0.591     0.568     0.579       551
+           0      0.564     0.578     0.571       462
+           1      0.625     0.840     0.716       525
+           2      0.745     0.478     0.582       477
+           3      0.591     0.568     0.579       551
 
-accuracy                          0.620      2015
-macro avg      0.631     0.616     0.612      2015
+    accuracy                          0.620      2015
+   macro avg      0.631     0.616     0.612      2015
 weighted avg      0.630     0.620     0.614      2015
 ```
 The confusion matrix is:
-![ResNet50 Confusion Matrix](./files/resnet50_tinyhgr_cm.png "ResNet 50 CM for TinyHGR)
+![ResNet50 Confusion Matrix](/files/resnet50_tinyhgr_cm.png "ResNet 50 CM for TinyHGR)
 ### Conclusions
 
 ### Discussion
