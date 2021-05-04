@@ -5,7 +5,6 @@
 ### Overview
 The problem that we face is creating a way for machines to understand certain hand gestures, using computer vision, in order for people to communicate with each other when one, or multiple members, is not able to communicate vocally. This can be handy in hospital emergency rooms, military situations and even, if the dataset was expanded, communicating with someone who only can only communicate through ASL. In this specific instance we focused on the gestures OK, thumbs up, thumbs down and a camera facing palm, to show proof of concept.
 
-
 ### Materials and Methods
 #### Datasets
 Two datasets were used to build different verisons. 
@@ -34,11 +33,26 @@ For this project we used the PyTorch, OpenCV, Pandas, and Numpy libraries. The e
 
 These models were not fine-tuned to the dataset. Instead, we extracted the features from the models, and added new classification layers to the model. These classification layers were then trained. 
 
+#### Transforms
+The following transforms were used on the training dataset:
+- Random Crop (Size 224 for Resnet, 299 for InceptionV3)
+- Resize (Size 224 for ResNet, 299 for InceptionV3)
+- Normalization
+
+Normalization used the same ranges for all models. The means used were [0.485, 0.456, 0.406] and standard deviation [0.229, 0.224, 0.225].
+
+For the validation and testing data only resize and normalization were done.
+
 ### Results
 
 ### Conclusions
 
 ### Discussion
+
+There are some limitations to our project. These limitations include:
+- Using the same learning rate and optimizers for all the models.  Better results could have been achieved it these were adjusted per model
+- ResNet50 and InceptionV3 were limited to being trained for 2 epochs. 
+- We aren't using entire datasets. Limiting the gestures the model can classify 
 
 ### Outlooks
 Moving forward we would train the ResNet and Inception models on the TinyHGR dataset further to get better results. After getting better results it could be used to try and capture hand gestures in real time, such as in a hospital setting. Along with this, we could add more gestures to the list to make the application more comprehensive. This would increase the variety of settings the application could be used in. 
